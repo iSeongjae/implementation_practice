@@ -7,7 +7,7 @@ My goal in this repository is just implementing model classes that I studied in 
 In this repository, I will post only code that I implemented, and the experiment's result. If I get insight with experimentation, I will write the conclusion, too.
 
 ## 1.1. Implemented Models and Simple Summary
-* ResNet: This model is a model that overcame residual connection in image classification. residual connection solves vanishing gradient problem in deep architecture.
+* ResNet: This model is a model that introduces residual connection in image classification. residual connection solves vanishing gradient problem in deep architecture.
 * RNN: This model addresses sequential data, for example stock, texts, history of purchases, or others. For implementing this model, I used for-loop, and drew shapes of flowing data.
 * LSTM: This model addresses the vanishing gradient problem of RNNs using gating mechanisms.
 * GRU: This model simplified LSTM with fewer parameters.
@@ -17,7 +17,7 @@ In this repository, I will post only code that I implemented, and the experiment
 
 ## 2.0. weighted EASE - Motivation
 
-Motivation was concept of confidence proposed in "Collaborative Filtering for Implicit Feedback Datasets" published on 2018.
+Motivation was concept of confidence proposed in "Collaborative Filtering for Implicit Feedback Datasets" published on 2008.
 In that paper, C uses count of interaction between user-item. And C operates how fit by count of interaction.
 I used item-popularity rather than count of interaction, because there are many binary datasets that express only interacted/uninteracted.
 
@@ -39,5 +39,5 @@ I input my weighted EASE model code, and I experimented on movielens 100k datase
 | @50  | 0.3934   | 0.1279    | 0.3913    | 0.1258     | 0.3902           | 0.1258            |
 | @100 | 0.5589   | 0.1547    | 0.5514    | 0.1517     | 0.5493           | 0.1516            |
 
-I observed improvements on only recall@10. There's not result following my expectation. Therefore, I did not draw a conclusion from this experiment.
+I observed improvements on only hit@10. There's not result following my expectation. Therefore, I did not draw a conclusion from this experiment.
 
